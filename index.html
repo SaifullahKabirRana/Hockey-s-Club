@@ -83,7 +83,7 @@
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
                     <div
-                        class="lg:absolute lg:bottom-8 -bottom-40 lg:right-8  bg-[#131318] p-8 w-[300px] lg:w-[500px] rounded-2xl">
+                        class="hidden lg:block lg:absolute lg:bottom-8 -bottom-40 lg:right-8  bg-[#131318] p-8 w-[300px] lg:w-[500px] rounded-2xl">
                         <h2 class="text-2xl font-extrabold text-[#FFFFFF]">Meet all the heroes from the field</h2>
                         <p class="text-[#FFFFFF99] font-medium mt-4">Dit amet consectetur. Condimentum dignissim
                             adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
@@ -129,6 +129,14 @@
                     </div>
                 </div>
             </div>
+            <div
+                class="block w-[100%] p-4 mt-6 lg:hidden lg:absolute lg:bottom-8 lg:right-8  bg-[#131318] lg:p-8  lg:w-[500px] rounded-2xl">
+                <h2 class="lg:text-2xl text-lg font-extrabold text-[#FFFFFF]">Meet all the heroes from the field</h2>
+                <p class=" text-[#FFFFFF99] font-medium mt-4">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+            </div>
+
         </section>
     </header>
     <main class="container mx-auto">
@@ -143,22 +151,26 @@
             </div>
             <div class="flex flex-col lg:flex-row gap-6 lg:gap-40 mt-12">
                 <div class="text-center">
-                    <div class="radial-progress text-[#FF4240] text-2xl font-extrabold" style="--value:87; --size:8rem;" role="progressbar"><span class="text-[#131318]">87%</span></div>
+                    <div class="radial-progress text-[#FF4240] text-2xl font-extrabold" style="--value:87; --size:8rem;"
+                        role="progressbar"><span class="text-[#131318]">87%</span></div>
                     <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">Prayer Facility</h2>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#49D293] text-2xl font-extrabold" style="--value:95; --size:8rem;" role="progressbar"><span class="text-[#131318]">95%</span></div>
+                    <div class="radial-progress text-[#49D293] text-2xl font-extrabold" style="--value:95; --size:8rem;"
+                        role="progressbar"><span class="text-[#131318]">95%</span></div>
                     <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">Experienced Coach</h2>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#FFB546] text-2xl font-extrabold" style="--value:90; --size:8rem;" role="progressbar"><span class="text-[#131318]">90%</span></div>
+                    <div class="radial-progress text-[#FFB546] text-2xl font-extrabold" style="--value:90; --size:8rem;"
+                        role="progressbar"><span class="text-[#131318]">90%</span></div>
                     <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">Senior Player</h2>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#4C8DF1] text-2xl font-extrabold" style="--value:80; --size:8rem;" role="progressbar"><span class="text-[#131318]">80%</span></div>
+                    <div class="radial-progress text-[#4C8DF1] text-2xl font-extrabold" style="--value:80; --size:8rem;"
+                        role="progressbar"><span class="text-[#131318]">80%</span></div>
                     <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">Training Ground</h2>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
@@ -173,20 +185,45 @@
                     aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
                 <hr class="border-dashed bg-[#13131833]">
             </div>
-            <div>
-                <div class="card w-96 bg-gradient-to-r from-[#F00] to-[#FF8938]  image-full">
-                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6 lg:mt-12">
+                <div class="hero place-items-start rounded-2xl " style="background-image: url(Images/2.png);">
+                    <div class="hero-overlay rounded-2xl bg-opacity-40"></div>
+                    <div class="hero-content mt-6 lg:mt-24 text-neutral-content">
+                        <div class="max-w-md lg:ml-8 ml-2">
+                            <h1 class="mb-5 text-3xl font-extrabold text-[#FFF]">Junior Program</h1>
+                            <p class="mb-5 text-[#FFF] ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn bg-primary-color text-white border-none px-5 text-xl font-bold lg:mb-8">Register Now!</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
+                <div class="hero place-items-start rounded-2xl " style="background-image: url(Images/3.png);">
+                    <div class="hero-overlay rounded-2xl bg-opacity-40"></div>
+                    <div class="hero-content mt-6 lg:mt-24 text-neutral-content">
+                        <div class="max-w-md lg:ml-8 ml-2">
+                            <h1 class="mb-5 text-3xl font-extrabold text-[#FFF]">Teenager Program</h1>
+                            <p class="mb-5 text-[#FFF]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn bg-primary-color text-white border-none px-5 text-xl font-bold lg:mb-8">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero place-items-start rounded-2xl lg:col-span-2 "
+                    style="background-image: url(Images/4.png);">
+                    <div class="hero-overlay rounded-2xl bg-opacity-40"></div>
+                    <div class="hero-content mt-6 lg:mt-56 text-neutral-content">
+                        <div class="max-w-md lg:ml-8 ml-2">
+                            <h1 class="mb-5 text-3xl font-extrabold text-[#FFF]">Professional Program</h1>
+                            <p class="mb-5 text-[#FFF]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn bg-primary-color text-white border-none px-5 text-xl font-bold lg:mb-8">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
+        <!-- n -->
 
 
     </main>
